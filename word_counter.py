@@ -1,6 +1,6 @@
 #taking input from the user about the filename
 def get_filename():
-    filename=input("Enter the file name from which you want to count the words")
+    filename=input("Enter the file name from which you want to count the words: ")
     return filename
 
 #function to try except if the file exists or not and if it doesnot exist we will directly close thep program with exit
@@ -25,4 +25,7 @@ def main():
     content=file_read(filename)
     count=count_words(content)
     print(f"The total no of words is {count}")
+
+#running main
+main()
 
